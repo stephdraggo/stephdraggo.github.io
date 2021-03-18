@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['volumetrigger_75',['VolumeTrigger',['../df/d9a/class_big_boi_modular_1_1_volume_trigger.html',1,'BigBoiModular']]]
+  ['volumeslider_28',['VolumeSlider',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html',1,'BigBoi::OptionsSystem']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joystickinput_22',['JoystickInput',['../d9/dae/class_big_boi_modular_1_1_mobile_1_1_joystick_input.html',1,'BigBoiModular::Mobile']]]
+  ['qualitydropdown_13',['QualityDropdown',['../da/df1/class_big_boi_1_1_options_system_1_1_quality_dropdown.html',1,'BigBoi::OptionsSystem']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialise_91',['Initialise',['../db/db6/class_big_boi_modular_1_1_mobile_1_1_mobile_input.html#ae896f639bcb7d96cfc5f7cde49b3e0b7',1,'BigBoiModular::Mobile::MobileInput']]]
+  ['mute_36',['Mute',['../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f',1,'BigBoi::OptionsSystem::MuteToggle']]]
 ];

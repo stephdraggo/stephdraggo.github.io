@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mobileinput_28',['MobileInput',['../db/db6/class_big_boi_modular_1_1_mobile_1_1_mobile_input.html',1,'BigBoiModular::Mobile']]],
-  ['monosingleton_29',['MonoSingleton',['../df/d84/class_big_boi_modular_1_1_mono_singleton.html',1,'BigBoiModular']]],
-  ['monosingleton_3c_20lootcontrol_20_3e_30',['MonoSingleton&lt; LootControl &gt;',['../df/d84/class_big_boi_modular_1_1_mono_singleton.html',1,'BigBoiModular']]]
+  ['savevalue_15',['SaveValue',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#ae318ee7626f4c2ae7db04bea58ed8f8d',1,'BigBoi::OptionsSystem::VolumeSlider']]],
+  ['searchingalgorithms_16',['SearchingAlgorithms',['../da/d2f/class_big_boi_1_1_searching_algorithms.html',1,'BigBoi']]],
+  ['sortingalgorithms_17',['SortingAlgorithms',['../d0/d32/class_big_boi_1_1_sorting_algorithms.html',1,'BigBoi']]]
 ];

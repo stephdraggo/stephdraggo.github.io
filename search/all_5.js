@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['improvedtextmesh_18',['ImprovedTextMesh',['../d4/dc9/class_big_boi_modular_1_1_u_i_1_1_improved_text_mesh.html',1,'BigBoiModular::UI']]],
-  ['initialise_19',['Initialise',['../db/db6/class_big_boi_modular_1_1_mobile_1_1_mobile_input.html#ae896f639bcb7d96cfc5f7cde49b3e0b7',1,'BigBoiModular::Mobile::MobileInput']]],
-  ['initialposition_20',['initialPosition',['../d1/da9/class_big_boi_modular_1_1_mobile_1_1_swipe_input_1_1_swipe.html#a52165c07857384342f5d9ddcaec0b904',1,'BigBoiModular::Mobile::SwipeInput::Swipe']]],
-  ['irunnable_21',['IRunnable',['../d1/dbe/interface_big_boi_modular_1_1_i_runnable.html',1,'BigBoiModular']]]
+  ['mute_11',['Mute',['../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f',1,'BigBoi::OptionsSystem::MuteToggle']]],
+  ['mutetoggle_12',['MuteToggle',['../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html',1,'BigBoi::OptionsSystem']]]
 ];

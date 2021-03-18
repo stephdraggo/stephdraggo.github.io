@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadablename_92',['LoadableName',['../d3/db9/class_big_boi_modular_1_1_scene_field_attribute.html#ae107bfc7b5d6a1a3cf66b4cbf93260f5',1,'BigBoiModular::SceneFieldAttribute']]]
+  ['savevalue_37',['SaveValue',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#ae318ee7626f4c2ae7db04bea58ed8f8d',1,'BigBoi::OptionsSystem::VolumeSlider']]]
 ];
