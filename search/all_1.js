@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['changevalue_4',['ChangeValue',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#a7c96b4e60b5f54b25a47f2c2cf787073',1,'BigBoi::OptionsSystem::VolumeSlider']]],
-  ['countingsort_5',['CountingSort',['../d0/d32/class_big_boi_1_1_sorting_algorithms.html#ac4f83934ab80d6dc5a4d3cf35994fb21',1,'BigBoi::SortingAlgorithms']]],
-  ['customkeybinds_6',['CustomKeybinds',['../d9/d5b/class_big_boi_1_1_options_system_1_1_custom_keybinds.html',1,'BigBoi::OptionsSystem']]],
-  ['customkeybindseditor_7',['CustomKeybindsEditor',['../d8/dbe/class_big_boi_1_1_inspector_editor_1_1_custom_keybinds_editor.html',1,'BigBoi::InspectorEditor']]]
+  ['bigboi_1',['BigBoi',['../d5/df8/namespace_big_boi.html',1,'']]],
+  ['binarysearch_3c_20t_20_3e_2',['BinarySearch&lt; T &gt;',['../da/d2f/class_big_boi_1_1_searching_algorithms.html#a86fe48f5ce779b06ab89bfce70931f34',1,'BigBoi::SearchingAlgorithms']]],
+  ['dialoguesystem_3',['DialogueSystem',['../dc/d40/namespace_big_boi_1_1_dialogue_system.html',1,'BigBoi']]],
+  ['inspectoreditor_4',['InspectorEditor',['../dd/dc7/namespace_big_boi_1_1_inspector_editor.html',1,'BigBoi']]],
+  ['optionssystem_5',['OptionsSystem',['../d1/dc5/namespace_big_boi_1_1_options_system.html',1,'BigBoi']]]
 ];

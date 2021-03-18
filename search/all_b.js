@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['resetswipe_35',['ResetSwipe',['../d5/d45/class_big_boi_modular_1_1_mobile_1_1_swipe_input.html#a84228e1082e4cf6cce6555413b359ca4',1,'BigBoiModular::Mobile::SwipeInput']]],
-  ['run_3c_20t_20_3e_36',['Run&lt; T &gt;',['../d4/d16/class_big_boi_modular_1_1_runnable_helper.html#aa7b3de083d7f99172b809ebac9cd2e18',1,'BigBoiModular::RunnableHelper']]],
-  ['runnablebehaviour_37',['RunnableBehaviour',['../d3/d57/class_big_boi_modular_1_1_runnable_behaviour.html',1,'BigBoiModular']]],
-  ['runnablehelper_38',['RunnableHelper',['../d4/d16/class_big_boi_modular_1_1_runnable_helper.html',1,'BigBoiModular']]]
+  ['savevalue_23',['SaveValue',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#ae318ee7626f4c2ae7db04bea58ed8f8d',1,'BigBoi::OptionsSystem::VolumeSlider']]],
+  ['searchingalgorithms_24',['SearchingAlgorithms',['../da/d2f/class_big_boi_1_1_searching_algorithms.html',1,'BigBoi']]],
+  ['sortingalgorithms_25',['SortingAlgorithms',['../d0/d32/class_big_boi_1_1_sorting_algorithms.html',1,'BigBoi']]]
 ];

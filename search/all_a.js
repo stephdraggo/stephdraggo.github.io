@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['positions_34',['positions',['../d1/da9/class_big_boi_modular_1_1_mobile_1_1_swipe_input_1_1_swipe.html#ab1294a6854bb46f44ee4b34adbd5d32f',1,'BigBoiModular::Mobile::SwipeInput::Swipe']]]
+  ['resolutionsdropdown_22',['ResolutionsDropdown',['../de/de0/class_big_boi_1_1_options_system_1_1_resolutions_dropdown.html',1,'BigBoi::OptionsSystem']]]
 ];

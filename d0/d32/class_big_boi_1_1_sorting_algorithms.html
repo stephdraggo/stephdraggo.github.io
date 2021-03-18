@@ -72,25 +72,22 @@ $(function() {
 <div class="title">BigBoi.SortingAlgorithms Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for BigBoi.SortingAlgorithms:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="../../d0/d32/class_big_boi_1_1_sorting_algorithms.png" alt=""/>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac4f83934ab80d6dc5a4d3cf35994fb21"><td class="memItemLeft" align="right" valign="top">static int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#ac4f83934ab80d6dc5a4d3cf35994fb21">CountingSort</a> (int[] _array)</td></tr>
-<tr class="memdesc:ac4f83934ab80d6dc5a4d3cf35994fb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an array of integers and uses counting sort to sort them in order of smallest to biggest. This algorithm is best used for integers close in value to one another  <a href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#ac4f83934ab80d6dc5a4d3cf35994fb21">More...</a><br /></td></tr>
-<tr class="separator:ac4f83934ab80d6dc5a4d3cf35994fb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7081160763bad56982a18877dafb582"><td class="memItemLeft" align="right" valign="top"><a id="ac7081160763bad56982a18877dafb582"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CountingSort&lt; T &gt;</b> (this List&lt; T &gt; _list)</td></tr>
+<tr class="separator:ac7081160763bad56982a18877dafb582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f08e593deff89fcb9bb0e4d8b9ec543"><td class="memItemLeft" align="right" valign="top">static List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#a0f08e593deff89fcb9bb0e4d8b9ec543">CountingSortOld</a> (List&lt; int &gt; _list)</td></tr>
+<tr class="memdesc:a0f08e593deff89fcb9bb0e4d8b9ec543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an array of integers and uses counting sort to sort them in order of smallest to biggest. This algorithm is best used for integers close in value to one another  <a href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#a0f08e593deff89fcb9bb0e4d8b9ec543">More...</a><br /></td></tr>
+<tr class="separator:a0f08e593deff89fcb9bb0e4d8b9ec543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00007">7</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00006">6</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac4f83934ab80d6dc5a4d3cf35994fb21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f83934ab80d6dc5a4d3cf35994fb21">&#9670;&nbsp;</a></span>CountingSort()</h2>
+<a id="a0f08e593deff89fcb9bb0e4d8b9ec543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f08e593deff89fcb9bb0e4d8b9ec543">&#9670;&nbsp;</a></span>CountingSortOld()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,10 +96,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int [] BigBoi.SortingAlgorithms.CountingSort </td>
+          <td class="memname">static List&lt;int&gt; BigBoi.SortingAlgorithms.CountingSortOld </td>
           <td>(</td>
-          <td class="paramtype">int[]&#160;</td>
-          <td class="paramname"><em>_array</em></td><td>)</td>
+          <td class="paramtype">List&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>_list</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -116,13 +113,13 @@ Static Public Member Functions</h2></td></tr>
 <p>Takes in an array of integers and uses counting sort to sort them in order of smallest to biggest. This algorithm is best used for integers close in value to one another </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_array</td><td>array of integers</td></tr>
+    <tr><td class="paramname">_list</td><td>array of integers</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>sorted array</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00015">15</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00076">76</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
 
 </div>
 </div>

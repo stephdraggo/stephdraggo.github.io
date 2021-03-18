@@ -72,28 +72,22 @@ $(function() {
 <div class="title">BigBoi.SearchingAlgorithms Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for BigBoi.SearchingAlgorithms:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="../../da/d2f/class_big_boi_1_1_searching_algorithms.png" alt=""/>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a63388299a78196e77cca8bf4f3717245"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a63388299a78196e77cca8bf4f3717245">LinearSearch</a> (object[] _array, object _target)</td></tr>
 <tr class="memdesc:a63388299a78196e77cca8bf4f3717245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the index of an object in a given array  <a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a63388299a78196e77cca8bf4f3717245">More...</a><br /></td></tr>
 <tr class="separator:a63388299a78196e77cca8bf4f3717245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5556798ef4aa8d136a722830e59635b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ae5556798ef4aa8d136a722830e59635b">BinarySearch</a> (int[] _array, int _target)</td></tr>
-<tr class="memdesc:ae5556798ef4aa8d136a722830e59635b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the index of an int in an array of ints Very fast BUT passed array must be sorted  <a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ae5556798ef4aa8d136a722830e59635b">More...</a><br /></td></tr>
-<tr class="separator:ae5556798ef4aa8d136a722830e59635b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fe48f5ce779b06ab89bfce70931f34"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a86fe48f5ce779b06ab89bfce70931f34">BinarySearch&lt; T &gt;</a> (List&lt; T &gt; _list, T _target, IComparer&lt; T &gt; _comparer)</td></tr>
+<tr class="memdesc:a86fe48f5ce779b06ab89bfce70931f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches through list of objects for a specific object and returns index  <a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a86fe48f5ce779b06ab89bfce70931f34">More...</a><br /></td></tr>
+<tr class="separator:a86fe48f5ce779b06ab89bfce70931f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html#l00007">7</a> of file <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html">SearchingAlgorithms.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae5556798ef4aa8d136a722830e59635b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5556798ef4aa8d136a722830e59635b">&#9670;&nbsp;</a></span>BinarySearch()</h2>
+<a id="a86fe48f5ce779b06ab89bfce70931f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fe48f5ce779b06ab89bfce70931f34">&#9670;&nbsp;</a></span>BinarySearch&lt; T &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -102,16 +96,22 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int BigBoi.SearchingAlgorithms.BinarySearch </td>
+          <td class="memname">static int BigBoi.SearchingAlgorithms.BinarySearch&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramtype">int[]&#160;</td>
-          <td class="paramname"><em>_array</em>, </td>
+          <td class="paramtype">List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>_list</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_target</em>&#160;</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IComparer&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>_comparer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -126,17 +126,24 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Find the index of an int in an array of ints Very fast BUT passed array must be sorted </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_array</td><td>sorted array of ints</td></tr>
-    <tr><td class="paramname">_target</td><td>target int</td></tr>
+<p>Searches through list of objects for a specific object and returns index </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>object type</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>index of target int</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_list</td><td>list of objects</td></tr>
+    <tr><td class="paramname">_target</td><td>target object</td></tr>
+    <tr><td class="paramname">_comparer</td><td>compare type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html#l00035">35</a> of file <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html">SearchingAlgorithms.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html#l00036">36</a> of file <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html">SearchingAlgorithms.cs</a>.</p>
 
 </div>
 </div>
