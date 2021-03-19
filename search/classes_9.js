@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['searchingalgorithms_47',['SearchingAlgorithms',['../da/d2f/class_big_boi_1_1_searching_algorithms.html',1,'BigBoi']]],
-  ['sortingalgorithms_48',['SortingAlgorithms',['../d0/d32/class_big_boi_1_1_sorting_algorithms.html',1,'BigBoi']]]
+  ['volumeslider_52',['VolumeSlider',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html',1,'BigBoi::OptionsSystem']]]
 ];

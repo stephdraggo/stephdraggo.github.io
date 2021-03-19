@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mute_60',['Mute',['../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f',1,'BigBoi::OptionsSystem::MuteToggle']]]
+  ['linearsearch_3c_20t_20_3e_63',['LinearSearch&lt; T &gt;',['../da/d2f/class_big_boi_1_1_searching_algorithms.html#a65aea15844a1aa9757b8e9e48a8edf62',1,'BigBoi::SearchingAlgorithms']]]
 ];

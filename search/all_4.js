@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['enddialogue_16',['EndDialogue',['../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a79a4c5f1172c35e26928cd222da5b817',1,'BigBoi::DialogueSystem::DialogueManager']]]
+  ['fullscreentoggle_17',['FullscreenToggle',['../d1/d5e/class_big_boi_1_1_options_system_1_1_fullscreen_toggle.html',1,'BigBoi::OptionsSystem']]]
 ];

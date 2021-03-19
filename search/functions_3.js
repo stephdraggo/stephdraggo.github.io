@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['jumpto_58',['JumpTo',['../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#aada4706b0ca5e8b23174d0661c7038e9',1,'BigBoi::DialogueSystem::DialogueManager']]]
+  ['getindex_60',['GetIndex',['../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#a927ca491420ea5b8cbb1829e20186ecf',1,'BigBoi::DialogueSystem::Dialogue']]],
+  ['gettarget_61',['GetTarget',['../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#afcbe46d32e5db1bdc75f53ec1cc1fe6b',1,'BigBoi::DialogueSystem::Dialogue']]]
 ];
