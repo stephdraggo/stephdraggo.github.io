@@ -109,20 +109,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr
 <tr class="memdesc:aada4706b0ca5e8b23174d0661c7038e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change active index and update display. Maybe change from int to DialogueLine for easy dragging and dropping  <a href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#aada4706b0ca5e8b23174d0661c7038e9">More...</a><br /></td></tr>
 <tr class="separator:aada4706b0ca5e8b23174d0661c7038e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0695aa1ae6c33ed62961bede82b30046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a0695aa1ae6c33ed62961bede82b30046">ResetButtons</a> ()</td></tr>
-<tr class="memdesc:a0695aa1ae6c33ed62961bede82b30046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove methods and deactivate buttons.  <a href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a0695aa1ae6c33ed62961bede82b30046">More...</a><br /></td></tr>
+<tr class="memdesc:a0695aa1ae6c33ed62961bede82b30046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove old buttons.  <a href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a0695aa1ae6c33ed62961bede82b30046">More...</a><br /></td></tr>
 <tr class="separator:a0695aa1ae6c33ed62961bede82b30046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a4c5f1172c35e26928cd222da5b817"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a79a4c5f1172c35e26928cd222da5b817">EndDialogue</a> ()</td></tr>
 <tr class="memdesc:a79a4c5f1172c35e26928cd222da5b817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates object.  <a href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a79a4c5f1172c35e26928cd222da5b817">More...</a><br /></td></tr>
 <tr class="separator:a79a4c5f1172c35e26928cd222da5b817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cfa19be67770a5a204130ede81316b8"><td class="memItemLeft" align="right" valign="top"><a id="a9cfa19be67770a5a204130ede81316b8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
-<tr class="separator:a9cfa19be67770a5a204130ede81316b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab8c962cdfe42180c96bb20a9791faa8b"><td class="memItemLeft" align="right" valign="top"><a id="ab8c962cdfe42180c96bb20a9791faa8b"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>dialogueSet</b></td></tr>
 <tr class="separator:ab8c962cdfe42180c96bb20a9791faa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa120ca401580cc658bcaf7f798acebd"><td class="memItemLeft" align="right" valign="top"><a id="afa120ca401580cc658bcaf7f798acebd"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>buttonPrefab</b></td></tr>
+<tr class="separator:afa120ca401580cc658bcaf7f798acebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ffcadc380d73e0b1282b963ebc1d806"><td class="memItemLeft" align="right" valign="top"><a id="a4ffcadc380d73e0b1282b963ebc1d806"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>buttonParent</b></td></tr>
+<tr class="separator:a4ffcadc380d73e0b1282b963ebc1d806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b228eb04203a099b3e1f6796afdf97d"><td class="memItemLeft" align="right" valign="top"><a id="a0b228eb04203a099b3e1f6796afdf97d"></a>
 Image&#160;</td><td class="memItemRight" valign="bottom"><b>faceCam</b></td></tr>
 <tr class="separator:a0b228eb04203a099b3e1f6796afdf97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,15 +135,9 @@ Text&#160;</td><td class="memItemRight" valign="bottom"><b>nameText</b></td></tr
 <tr class="memitem:a930f53a3d48017499914b0d514169f4d"><td class="memItemLeft" align="right" valign="top"><a id="a930f53a3d48017499914b0d514169f4d"></a>
 Text&#160;</td><td class="memItemRight" valign="bottom"><b>dialogueText</b></td></tr>
 <tr class="separator:a930f53a3d48017499914b0d514169f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1840a6f814465391cdfc740f3a3390f3"><td class="memItemLeft" align="right" valign="top"><a id="a1840a6f814465391cdfc740f3a3390f3"></a>
-Button&#160;</td><td class="memItemRight" valign="bottom"><b>nextButton</b></td></tr>
-<tr class="separator:a1840a6f814465391cdfc740f3a3390f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34cde2044810d6c6e7de9a23e1b2115e"><td class="memItemLeft" align="right" valign="top"><a id="a34cde2044810d6c6e7de9a23e1b2115e"></a>
-Button&#160;</td><td class="memItemRight" valign="bottom"><b>byeButton</b></td></tr>
-<tr class="separator:a34cde2044810d6c6e7de9a23e1b2115e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b308a95ca77f6486c15356da4571eb6"><td class="memItemLeft" align="right" valign="top"><a id="a6b308a95ca77f6486c15356da4571eb6"></a>
-Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>extraButtons</b></td></tr>
-<tr class="separator:a6b308a95ca77f6486c15356da4571eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a7cb5ec137f3ee85401a6fe04a7240"><td class="memItemLeft" align="right" valign="top"><a id="ae7a7cb5ec137f3ee85401a6fe04a7240"></a>
+List&lt; Button &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>actionButtons</b> = new List&lt;Button&gt;()</td></tr>
+<tr class="separator:ae7a7cb5ec137f3ee85401a6fe04a7240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13685a1519c809fec54af73f68c9c300"><td class="memItemLeft" align="right" valign="top"><a id="a13685a1519c809fec54af73f68c9c300"></a>
 <a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html">Dialogue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>activeDialogue</b></td></tr>
 <tr class="separator:a13685a1519c809fec54af73f68c9c300"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +145,7 @@ Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>extraButtons</b><
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Monobehaviour instance storing information for the currently active dialogue and methods for each possible dialogue action. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00014">14</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00015">15</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a79a4c5f1172c35e26928cd222da5b817"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79a4c5f1172c35e26928cd222da5b817">&#9670;&nbsp;</a></span>EndDialogue()</h2>
@@ -175,7 +172,7 @@ Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>extraButtons</b><
 
 <p>Deactivates object. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00135">135</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00130">130</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
 
 </div>
 </div>
@@ -211,7 +208,7 @@ Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>extraButtons</b><
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00107">107</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00105">105</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
 
 </div>
 </div>
@@ -238,9 +235,9 @@ Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>extraButtons</b><
 </table>
 </div><div class="memdoc">
 
-<p>Remove methods and deactivate buttons. </p>
+<p>Remove old buttons. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00117">117</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00115">115</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
 
 </div>
 </div>
@@ -287,7 +284,7 @@ Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>extraButtons</b><
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00146">146</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00141">141</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
 
 </div>
 </div>
