@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resolutionsdropdown_22',['ResolutionsDropdown',['../de/de0/class_big_boi_1_1_options_system_1_1_resolutions_dropdown.html',1,'BigBoi::OptionsSystem']]]
+  ['person_23',['Person',['../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html',1,'BigBoi::DialogueSystem']]]
 ];

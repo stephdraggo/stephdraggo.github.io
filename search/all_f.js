@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weightedloot_53',['WeightedLoot',['../d4/d3d/class_big_boi_modular_1_1_loot_1_1_loot_table_1_1_weighted_loot.html',1,'BigBoiModular::Loot::LootTable']]]
+  ['volumeslider_32',['VolumeSlider',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html',1,'BigBoi::OptionsSystem']]]
 ];

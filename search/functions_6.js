@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['resetswipe_96',['ResetSwipe',['../d5/d45/class_big_boi_modular_1_1_mobile_1_1_swipe_input.html#a84228e1082e4cf6cce6555413b359ca4',1,'BigBoiModular::Mobile::SwipeInput']]],
-  ['run_3c_20t_20_3e_97',['Run&lt; T &gt;',['../d4/d16/class_big_boi_modular_1_1_runnable_helper.html#aa7b3de083d7f99172b809ebac9cd2e18',1,'BigBoiModular::RunnableHelper']]]
+  ['resetbuttons_61',['ResetButtons',['../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a0695aa1ae6c33ed62961bede82b30046',1,'BigBoi::DialogueSystem::DialogueManager']]]
 ];

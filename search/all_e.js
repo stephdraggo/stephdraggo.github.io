@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['validate_3c_20t_20_3e_51',['Validate&lt; T &gt;',['../d4/d16/class_big_boi_modular_1_1_runnable_helper.html#a6ac6d464a9d43c3d31b1eb21f7815c1f',1,'BigBoiModular::RunnableHelper']]],
-  ['volumetrigger_52',['VolumeTrigger',['../df/d9a/class_big_boi_modular_1_1_volume_trigger.html',1,'BigBoiModular']]]
+  ['updatedisplay_31',['UpdateDisplay',['../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#ae463fdf524499736c48af76099ea620c',1,'BigBoi::DialogueSystem::DialogueManager']]]
 ];

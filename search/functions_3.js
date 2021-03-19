@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mute_52',['Mute',['../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f',1,'BigBoi::OptionsSystem::MuteToggle']]]
+  ['jumpto_58',['JumpTo',['../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#aada4706b0ca5e8b23174d0661c7038e9',1,'BigBoi::DialogueSystem::DialogueManager']]]
 ];

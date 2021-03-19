@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['person_20',['Person',['../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html',1,'BigBoi::DialogueSystem']]]
+  ['linearsearch_20',['LinearSearch',['../da/d2f/class_big_boi_1_1_searching_algorithms.html#a63388299a78196e77cca8bf4f3717245',1,'BigBoi::SearchingAlgorithms']]]
 ];
