@@ -66,8 +66,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#properties">Properties</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d4/d39/class_big_boi_1_1_dialogue_system_1_1_person-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -75,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Scriptable object for holding visual information about the person speaking. Have one per each unique speaker.  
+<p>Unique data for a character in dialogue. Allows name and face to be hidden and revealed based on bools. Shows the correct sprite for whichever expression the character is supposed to have.  
  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for BigBoi.DialogueSystem.Person:</div>
@@ -84,32 +85,178 @@ Inheritance diagram for BigBoi.DialogueSystem.Person:</div>
   <img src="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/struct_big_boi_1_1_dialogue_system_1_1_person_1_1_expression_set.html">ExpressionSet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default expression options for the character. To add or remove expressions, edit this struct and the 'Expressions' enum in <a class="el" href="../../d9/d96/_manager_8cs_source.html">Manager.cs</a>  <a href="../../d4/d5e/struct_big_boi_1_1_dialogue_system_1_1_person_1_1_expression_set.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae665445cc0d921b4c7cc4afc638df24c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#ae665445cc0d921b4c7cc4afc638df24c">Name</a> (int _alias=-1)</td></tr>
+<tr class="memdesc:ae665445cc0d921b4c7cc4afc638df24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns name of character/object if "known" is true, else returns "???" Allows getting a specific alias instead  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#ae665445cc0d921b4c7cc4afc638df24c">More...</a><br /></td></tr>
+<tr class="separator:ae665445cc0d921b4c7cc4afc638df24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef63647c4faa0607b81cbc38067832e"><td class="memItemLeft" align="right" valign="top">Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a3ef63647c4faa0607b81cbc38067832e">Picture</a> (<a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a11507e9bc467fb60580daa5fe5fb7339">Expressions</a> _expression)</td></tr>
+<tr class="memdesc:a3ef63647c4faa0607b81cbc38067832e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets correct face sprite based on expression given.  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a3ef63647c4faa0607b81cbc38067832e">More...</a><br /></td></tr>
+<tr class="separator:a3ef63647c4faa0607b81cbc38067832e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7e95d3d8f80ce78db81fd016ee070ecb"><td class="memItemLeft" align="right" valign="top"><a id="a7e95d3d8f80ce78db81fd016ee070ecb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>known</b></td></tr>
+<tr class="memitem:a7e95d3d8f80ce78db81fd016ee070ecb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a7e95d3d8f80ce78db81fd016ee070ecb">known</a></td></tr>
+<tr class="memdesc:a7e95d3d8f80ce78db81fd016ee070ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows name if true, else shows "???"  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a7e95d3d8f80ce78db81fd016ee070ecb">More...</a><br /></td></tr>
 <tr class="separator:a7e95d3d8f80ce78db81fd016ee070ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a7925d2c1c08313b3757fdb34e38f2945"><td class="memItemLeft" align="right" valign="top"><a id="a7925d2c1c08313b3757fdb34e38f2945"></a>
-Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>Photo</b><code> [get]</code></td></tr>
-<tr class="separator:a7925d2c1c08313b3757fdb34e38f2945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d874446fe35492f0d61d57e5fcb5f4a"><td class="memItemLeft" align="right" valign="top"><a id="a6d874446fe35492f0d61d57e5fcb5f4a"></a>
-string???&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get]</code></td></tr>
-<tr class="separator:a6d874446fe35492f0d61d57e5fcb5f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0645e30dad0051c5cfd07f0da1c1e3e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a0645e30dad0051c5cfd07f0da1c1e3e8">seen</a></td></tr>
+<tr class="memdesc:a0645e30dad0051c5cfd07f0da1c1e3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows face if true, else shows "unknown face" set in <a class="el" href="../../d9/d96/_manager_8cs_source.html">Manager.cs</a>  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a0645e30dad0051c5cfd07f0da1c1e3e8">More...</a><br /></td></tr>
+<tr class="separator:a0645e30dad0051c5cfd07f0da1c1e3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af54e66fc70f231e981727a7eacaacea4"><td class="memItemLeft" align="right" valign="top"><a id="af54e66fc70f231e981727a7eacaacea4"></a>
-Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>sprite</b></td></tr>
-<tr class="separator:af54e66fc70f231e981727a7eacaacea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfc63f1a27fe65730d2fc6b0b8af8b4"><td class="memItemLeft" align="right" valign="top"><a id="abdfc63f1a27fe65730d2fc6b0b8af8b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasAlias</b></td></tr>
+<tr class="separator:abdfc63f1a27fe65730d2fc6b0b8af8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0dcc4268bcd52f9c23a6903e77a84a"><td class="memItemLeft" align="right" valign="top"><a id="abd0dcc4268bcd52f9c23a6903e77a84a"></a>
+string[]&#160;</td><td class="memItemRight" valign="bottom"><b>alias</b></td></tr>
+<tr class="separator:abd0dcc4268bcd52f9c23a6903e77a84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09249c2a3c596fd706a7a3b3f92f4393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5e/struct_big_boi_1_1_dialogue_system_1_1_person_1_1_expression_set.html">ExpressionSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a09249c2a3c596fd706a7a3b3f92f4393">pictures</a></td></tr>
+<tr class="memdesc:a09249c2a3c596fd706a7a3b3f92f4393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of face display options for character.  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#a09249c2a3c596fd706a7a3b3f92f4393">More...</a><br /></td></tr>
+<tr class="separator:a09249c2a3c596fd706a7a3b3f92f4393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Scriptable object for holding visual information about the person speaking. Have one per each unique speaker. </p>
+<div class="textblock"><p>Unique data for a character in dialogue. Allows name and face to be hidden and revealed based on bools. Shows the correct sprite for whichever expression the character is supposed to have. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d2d/_person_8cs_source.html#l00009">9</a> of file <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="../../d9/d2d/_person_8cs_source.html#l00012">12</a> of file <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae665445cc0d921b4c7cc4afc638df24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae665445cc0d921b4c7cc4afc638df24c">&#9670;&nbsp;</a></span>Name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string BigBoi.DialogueSystem.Person.Name </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_alias</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns name of character/object if "known" is true, else returns "???" Allows getting a specific alias instead </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d2d/_person_8cs_source.html#l00038">38</a> of file <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>.</p>
+
+</div>
+</div>
+<a id="a3ef63647c4faa0607b81cbc38067832e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef63647c4faa0607b81cbc38067832e">&#9670;&nbsp;</a></span>Picture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sprite BigBoi.DialogueSystem.Person.Picture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a11507e9bc467fb60580daa5fe5fb7339">Expressions</a>&#160;</td>
+          <td class="paramname"><em>_expression</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets correct face sprite based on expression given. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_expression</td><td>which expression to return the face for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the sprite to display</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d2d/_person_8cs_source.html#l00076">76</a> of file <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7e95d3d8f80ce78db81fd016ee070ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e95d3d8f80ce78db81fd016ee070ecb">&#9670;&nbsp;</a></span>known</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BigBoi.DialogueSystem.Person.known</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shows name if true, else shows "???" </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d2d/_person_8cs_source.html#l00018">18</a> of file <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>.</p>
+
+</div>
+</div>
+<a id="a09249c2a3c596fd706a7a3b3f92f4393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09249c2a3c596fd706a7a3b3f92f4393">&#9670;&nbsp;</a></span>pictures</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d5e/struct_big_boi_1_1_dialogue_system_1_1_person_1_1_expression_set.html">ExpressionSet</a> BigBoi.DialogueSystem.Person.pictures</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set of face display options for character. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d2d/_person_8cs_source.html#l00055">55</a> of file <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>.</p>
+
+</div>
+</div>
+<a id="a0645e30dad0051c5cfd07f0da1c1e3e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0645e30dad0051c5cfd07f0da1c1e3e8">&#9670;&nbsp;</a></span>seen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BigBoi.DialogueSystem.Person.seen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shows face if true, else shows "unknown face" set in <a class="el" href="../../d9/d96/_manager_8cs_source.html">Manager.cs</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d2d/_person_8cs_source.html#l00024">24</a> of file <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Stephane/Documents/GitHub/BigBoi/Assets/BigBoi/DialogueSystem/<a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a></li>
 </ul>
 </div><!-- contents -->

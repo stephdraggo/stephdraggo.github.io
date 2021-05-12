@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keybind_21',['KeyBind',['../dc/d96/struct_big_boi_1_1_options_system_1_1_custom_keybinds_1_1_key_bind.html',1,'BigBoi::OptionsSystem::CustomKeybinds']]]
+  ['hovertext_49',['HoverText',['../d9/d16/class_big_boi_1_1_menus_1_1_hover_text.html',1,'BigBoi::Menus']]]
 ];

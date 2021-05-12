@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BigBoi: C:/Users/Stephane/Documents/GitHub/BigBoi/Assets/BigBoi/OptionsMenuSystem/MuteToggle.cs Source File</title>
+<title>BigBoi: C:/Users/Stephane/Documents/GitHub/BigBoi/Assets/BigBoi/Menus/OptionsMenuSystem/MuteToggle.cs Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_a28b1f62fcc5856f6278aace34b2104f.html">BigBoi</a></li><li class="navelem"><a class="el" href="../../dir_81fd838333ed7559d948f0b0bb6bd81c.html">OptionsMenuSystem</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_a28b1f62fcc5856f6278aace34b2104f.html">BigBoi</a></li><li class="navelem"><a class="el" href="../../dir_dab7613e7e75b38744d2caec68fb9b67.html">Menus</a></li><li class="navelem"><a class="el" href="../../dir_fbcfeb6f067d3941b2e888eaacfc50a8.html">OptionsMenuSystem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,13 +72,13 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine.Audio;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> NullReEx = System.NullReferenceException;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> NullReEx = <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.NullReferenceException;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/dc5/namespace_big_boi_1_1_options_system.html">BigBoi.OptionsSystem</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/d6a/namespace_big_boi_1_1_menus_1_1_options_menu_system.html">BigBoi.Menus.OptionsMenuSystem</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    [AddComponentMenu(<span class="stringliteral">&quot;BigBoi/Options Menu System/Mute Toggle&quot;</span>)]</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    [RequireComponent(typeof(Toggle))]</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html">MuteToggle</a> : MonoBehaviour</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html">MuteToggle</a> : MonoBehaviour</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">private</span> Toggle toggle;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">string</span> saveName;</div>
@@ -99,24 +99,24 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            toggle = GetComponent&lt;Toggle&gt;(); <span class="comment">//connect to own toggle</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            toggle.onValueChanged.AddListener(<a class="code" href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f">Mute</a>); <span class="comment">//add method to event group</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            toggle.onValueChanged.AddListener(<a class="code" href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html#a576faaac5434281406a5bf6b67d63f35">Mute</a>); <span class="comment">//add method to event group</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">if</span> (PlayerPrefs.HasKey(saveName)) <span class="comment">//if saved key</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span> (PlayerPrefs.GetInt(saveName) == 0) <span class="comment">//if key muted</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    toggle.isOn = <span class="keyword">true</span>; <span class="comment">//update display</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f">Mute</a>(<span class="keyword">true</span>); <span class="comment">//apply mute</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html#a576faaac5434281406a5bf6b67d63f35">Mute</a>(<span class="keyword">true</span>); <span class="comment">//apply mute</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">else</span> <span class="comment">//if key not muted</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    toggle.isOn = <span class="keyword">false</span>; <span class="comment">//update display</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <a class="code" href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f">Mute</a>(<span class="keyword">false</span>); <span class="comment">//apply unmute</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <a class="code" href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html#a576faaac5434281406a5bf6b67d63f35">Mute</a>(<span class="keyword">false</span>); <span class="comment">//apply unmute</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f">   52</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f">Mute</a>(<span class="keywordtype">bool</span> _muted)</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html#a576faaac5434281406a5bf6b67d63f35">   52</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html#a576faaac5434281406a5bf6b67d63f35">Mute</a>(<span class="keywordtype">bool</span> _muted)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span> (_muted)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            {</div>
@@ -132,9 +132,10 @@ $(function() {
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="ttc" id="aclass_big_boi_1_1_options_system_1_1_mute_toggle_html"><div class="ttname"><a href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html">BigBoi.OptionsSystem.MuteToggle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d96/_mute_toggle_8cs_source.html#l00010">MuteToggle.cs:11</a></div></div>
-<div class="ttc" id="aclass_big_boi_1_1_options_system_1_1_mute_toggle_html_a3012876d5cbaf1462d41cffb801ea90f"><div class="ttname"><a href="../../d9/dde/class_big_boi_1_1_options_system_1_1_mute_toggle.html#a3012876d5cbaf1462d41cffb801ea90f">BigBoi.OptionsSystem.MuteToggle.Mute</a></div><div class="ttdeci">void Mute(bool _muted)</div><div class="ttdoc">Mutes and un-mutes Saves automatically</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d96/_mute_toggle_8cs_source.html#l00052">MuteToggle.cs:52</a></div></div>
-<div class="ttc" id="anamespace_big_boi_1_1_options_system_html"><div class="ttname"><a href="../../d1/dc5/namespace_big_boi_1_1_options_system.html">BigBoi.OptionsSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcf/_custom_keybinds_editor_8cs_source.html#l00005">CustomKeybindsEditor.cs:6</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle_html"><div class="ttname"><a href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html">BigBoi.Menus.OptionsMenuSystem.MuteToggle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d96/_mute_toggle_8cs_source.html#l00010">MuteToggle.cs:11</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle_html_a576faaac5434281406a5bf6b67d63f35"><div class="ttname"><a href="../../df/df7/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_mute_toggle.html#a576faaac5434281406a5bf6b67d63f35">BigBoi.Menus.OptionsMenuSystem.MuteToggle.Mute</a></div><div class="ttdeci">void Mute(bool _muted)</div><div class="ttdoc">Mutes and un-mutes Saves automatically</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d96/_mute_toggle_8cs_source.html#l00052">MuteToggle.cs:52</a></div></div>
+<div class="ttc" id="anamespace_big_boi_1_1_menus_1_1_options_menu_system_html"><div class="ttname"><a href="../../d1/d6a/namespace_big_boi_1_1_menus_1_1_options_menu_system.html">BigBoi.Menus.OptionsMenuSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d83/_custom_keybinds_8cs_source.html#l00007">CustomKeybinds.cs:8</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="../../d8/dd0/namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/_i_value_8cs_source.html#l00001">IValue.cs:2</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

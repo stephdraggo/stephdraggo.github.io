@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BigBoi: C:/Users/Stephane/Documents/GitHub/BigBoi/Assets/BigBoi/OptionsMenuSystem/VolumeSlider.cs Source File</title>
+<title>BigBoi: C:/Users/Stephane/Documents/GitHub/BigBoi/Assets/BigBoi/Menus/OptionsMenuSystem/VolumeSlider.cs Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_a28b1f62fcc5856f6278aace34b2104f.html">BigBoi</a></li><li class="navelem"><a class="el" href="../../dir_81fd838333ed7559d948f0b0bb6bd81c.html">OptionsMenuSystem</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_a28b1f62fcc5856f6278aace34b2104f.html">BigBoi</a></li><li class="navelem"><a class="el" href="../../dir_dab7613e7e75b38744d2caec68fb9b67.html">Menus</a></li><li class="navelem"><a class="el" href="../../dir_fbcfeb6f067d3941b2e888eaacfc50a8.html">OptionsMenuSystem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,14 +73,14 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine.Audio;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine.EventSystems;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> NullReEx = System.NullReferenceException;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> NullReEx = <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.NullReferenceException;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/dc5/namespace_big_boi_1_1_options_system.html">BigBoi.OptionsSystem</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/d6a/namespace_big_boi_1_1_menus_1_1_options_menu_system.html">BigBoi.Menus.OptionsMenuSystem</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    [AddComponentMenu(<span class="stringliteral">&quot;BigBoi/Options Menu System/Volume Slider&quot;</span>)]</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    [RequireComponent(typeof(Slider))]</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    [RequireComponent(typeof(EventTrigger))]</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html">VolumeSlider</a> : MonoBehaviour</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html">VolumeSlider</a> : MonoBehaviour</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span> Slider slider;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">string</span> saveName;</div>
@@ -106,37 +106,38 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            slider.minValue = range.x; <span class="comment">//set max</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            slider.maxValue = range.y; <span class="comment">//set min</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            slider.onValueChanged.AddListener(<a class="code" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#a7c96b4e60b5f54b25a47f2c2cf787073">ChangeValue</a>); <span class="comment">//add method to event group</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            slider.onValueChanged.AddListener(<a class="code" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#abdff24e450ef83e922e711af8e3e2865">ChangeValue</a>); <span class="comment">//add method to event group</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="comment">//setup on pointer up method</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            EventTrigger trigger = GetComponent&lt;EventTrigger&gt;(); <span class="comment">//get event trigger</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            EventTrigger.Entry entry = <span class="keyword">new</span> EventTrigger.Entry(); <span class="comment">//create new entry</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            entry.eventID = EventTriggerType.PointerUp; <span class="comment">//assign trigger type to entry</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            entry.callback.AddListener(data =&gt; <a class="code" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#ae318ee7626f4c2ae7db04bea58ed8f8d">SaveValue</a>()); <span class="comment">//add method to entry listener</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            entry.callback.AddListener(data =&gt; <a class="code" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#a2de1fb6dc3e996e90a6bffcf7028b6f8">SaveValue</a>()); <span class="comment">//add method to entry listener</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            trigger.triggers.Add(entry); <span class="comment">//attach entry to event trigger</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (PlayerPrefs.HasKey(saveName)) <span class="comment">//if saved key</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                slider.value = PlayerPrefs.GetFloat(saveName); <span class="comment">//load key</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">else</span> <a class="code" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#a7c96b4e60b5f54b25a47f2c2cf787073">ChangeValue</a>(range.y); <span class="comment">//else set volume to max</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">else</span> <a class="code" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#abdff24e450ef83e922e711af8e3e2865">ChangeValue</a>(range.y); <span class="comment">//else set volume to max</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#a7c96b4e60b5f54b25a47f2c2cf787073">   57</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#a7c96b4e60b5f54b25a47f2c2cf787073">ChangeValue</a>(<span class="keywordtype">float</span> _value)</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#abdff24e450ef83e922e711af8e3e2865">   57</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#abdff24e450ef83e922e711af8e3e2865">ChangeValue</a>(<span class="keywordtype">float</span> _value)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            mixer.SetFloat(exposedParamName, _value);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#ae318ee7626f4c2ae7db04bea58ed8f8d">   65</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#ae318ee7626f4c2ae7db04bea58ed8f8d">SaveValue</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#a2de1fb6dc3e996e90a6bffcf7028b6f8">   65</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#a2de1fb6dc3e996e90a6bffcf7028b6f8">SaveValue</a>()</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            PlayerPrefs.SetFloat(saveName, slider.value);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="ttc" id="aclass_big_boi_1_1_options_system_1_1_volume_slider_html"><div class="ttname"><a href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html">BigBoi.OptionsSystem.VolumeSlider</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df1/_volume_slider_8cs_source.html#l00012">VolumeSlider.cs:13</a></div></div>
-<div class="ttc" id="aclass_big_boi_1_1_options_system_1_1_volume_slider_html_a7c96b4e60b5f54b25a47f2c2cf787073"><div class="ttname"><a href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#a7c96b4e60b5f54b25a47f2c2cf787073">BigBoi.OptionsSystem.VolumeSlider.ChangeValue</a></div><div class="ttdeci">void ChangeValue(float _value)</div><div class="ttdoc">Dynamically changes volume according to slider input.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df1/_volume_slider_8cs_source.html#l00057">VolumeSlider.cs:57</a></div></div>
-<div class="ttc" id="aclass_big_boi_1_1_options_system_1_1_volume_slider_html_ae318ee7626f4c2ae7db04bea58ed8f8d"><div class="ttname"><a href="../../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html#ae318ee7626f4c2ae7db04bea58ed8f8d">BigBoi.OptionsSystem.VolumeSlider.SaveValue</a></div><div class="ttdeci">void SaveValue()</div><div class="ttdoc">Saves volume value to playerprefs on pointer up.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df1/_volume_slider_8cs_source.html#l00065">VolumeSlider.cs:65</a></div></div>
-<div class="ttc" id="anamespace_big_boi_1_1_options_system_html"><div class="ttname"><a href="../../d1/dc5/namespace_big_boi_1_1_options_system.html">BigBoi.OptionsSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcf/_custom_keybinds_editor_8cs_source.html#l00005">CustomKeybindsEditor.cs:6</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider_html"><div class="ttname"><a href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html">BigBoi.Menus.OptionsMenuSystem.VolumeSlider</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df1/_volume_slider_8cs_source.html#l00012">VolumeSlider.cs:13</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider_html_a2de1fb6dc3e996e90a6bffcf7028b6f8"><div class="ttname"><a href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#a2de1fb6dc3e996e90a6bffcf7028b6f8">BigBoi.Menus.OptionsMenuSystem.VolumeSlider.SaveValue</a></div><div class="ttdeci">void SaveValue()</div><div class="ttdoc">Saves volume value to playerprefs on pointer up.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df1/_volume_slider_8cs_source.html#l00065">VolumeSlider.cs:65</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider_html_abdff24e450ef83e922e711af8e3e2865"><div class="ttname"><a href="../../df/dea/class_big_boi_1_1_menus_1_1_options_menu_system_1_1_volume_slider.html#abdff24e450ef83e922e711af8e3e2865">BigBoi.Menus.OptionsMenuSystem.VolumeSlider.ChangeValue</a></div><div class="ttdeci">void ChangeValue(float _value)</div><div class="ttdoc">Dynamically changes volume according to slider input.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df1/_volume_slider_8cs_source.html#l00057">VolumeSlider.cs:57</a></div></div>
+<div class="ttc" id="anamespace_big_boi_1_1_menus_1_1_options_menu_system_html"><div class="ttname"><a href="../../d1/d6a/namespace_big_boi_1_1_menus_1_1_options_menu_system.html">BigBoi.Menus.OptionsMenuSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d83/_custom_keybinds_8cs_source.html#l00007">CustomKeybinds.cs:8</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="../../d8/dd0/namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/_i_value_8cs_source.html#l00001">IValue.cs:2</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

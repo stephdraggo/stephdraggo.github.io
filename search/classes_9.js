@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['volumeslider_52',['VolumeSlider',['../d7/d7e/class_big_boi_1_1_options_system_1_1_volume_slider.html',1,'BigBoi::OptionsSystem']]]
+  ['keybind_134',['KeyBind',['../d3/def/struct_big_boi_1_1_menus_1_1_options_menu_system_1_1_custom_keybinds_1_1_key_bind.html',1,'BigBoi::Menus::OptionsMenuSystem::CustomKeybinds']]]
 ];

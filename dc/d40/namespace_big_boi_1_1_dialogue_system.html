@@ -73,40 +73,58 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Module for building dynamic dialogue trees  
+<p>Modular <a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html" title="Holds an array of dialogue lines. Allows finding the index of a specific line using LinearSearch() fr...">Dialogue</a> <a class="el" href="../../d8/dd0/namespace_system.html">System</a> in <a class="el" href="../../d5/df8/namespace_big_boi.html">BigBoi</a>. Allows creating fully customisable speakers and dialogues. Non-linear and multiple choice dialogue supported.  
 <a href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4a/class_big_boi_1_1_dialogue_system_1_1_action_button.html">ActionButton</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information for one dialogue action. Type of action, text to display on button, and target index for "JumpTo" type actions.  <a href="../../d8/d4a/class_big_boi_1_1_dialogue_system_1_1_action_button.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html">Dialogue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scriptable object holding all the information for one full dialogue.  <a href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds an array of dialogue lines. Allows finding the index of a specific line using LinearSearch() from <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html">SearchingAlgorithms.cs</a>  <a href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3e/class_big_boi_1_1_dialogue_system_1_1_dialogue_action_info.html">DialogueActionInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information for each specific action allowed. Type of action, action label, and target dialogue line if action allows skipping to a non-chonological line of dialogue.  <a href="../../dc/d3e/class_big_boi_1_1_dialogue_system_1_1_dialogue_action_info.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d68/class_big_boi_1_1_dialogue_system_1_1_action_button_editor.html">ActionButtonEditor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html">DialogueManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monobehaviour instance storing information for the currently active dialogue and methods for each possible dialogue action.  <a href="../../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/class_big_boi_1_1_dialogue_system_1_1_dialogue_editor.html">DialogueEditor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3d/class_big_boi_1_1_dialogue_system_1_1_person_editor.html">PersonEditor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd2/class_big_boi_1_1_dialogue_system_1_1_line.html">Line</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information specific to one line of dialogue. <a class="el" href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html" title="Unique data for a character in dialogue. Allows name and face to be hidden and revealed based on bool...">Person</a> speaking, which expression to display for that person, the text of the dialogue, and possible actions to take in this line of dialogue.  <a href="../../db/dd2/class_big_boi_1_1_dialogue_system_1_1_line.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/class_big_boi_1_1_dialogue_system_1_1_manager.html">Manager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d26/class_big_boi_1_1_dialogue_system_1_1_manager.html" title="Manager class for all dialogue in a scene. Must be created in each scene where dialogue will exist as...">Manager</a> class for all dialogue in a scene. Must be created in each scene where dialogue will exist as it requires references to scene-specific canvas elements.  <a href="../../db/d26/class_big_boi_1_1_dialogue_system_1_1_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html">Person</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scriptable object for holding visual information about the person speaking. Have one per each unique speaker.  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d06/class_big_boi_1_1_dialogue_system_1_1_dialogue_action_info_editor.html">DialogueActionInfoEditor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique data for a character in dialogue. Allows name and face to be hidden and revealed based on bools. Shows the correct sprite for whichever expression the character is supposed to have.  <a href="../../d8/d0b/class_big_boi_1_1_dialogue_system_1_1_person.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a715b54fe803e86b07860064cb94ee9f2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a715b54fe803e86b07860064cb94ee9f2">DialogueActions</a> { <b>Next</b>
-, <b>Bye</b>
+<tr class="memitem:a11507e9bc467fb60580daa5fe5fb7339"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a11507e9bc467fb60580daa5fe5fb7339">Expressions</a> { <br />
+&#160;&#160;<b>Neutral</b>
+, <b>Happy</b>
+, <b>Sad</b>
+, <b>Angry</b>
+, <br />
+&#160;&#160;<b>Embarrassed</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a11507e9bc467fb60580daa5fe5fb7339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default expression options for character faces. To add or removes options, edit this enum and the "ExpressionSet" struct in <a class="el" href="d9/d2d/_person_8cs_source.html">Person.cs</a>.  <a href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a11507e9bc467fb60580daa5fe5fb7339">More...</a><br /></td></tr>
+<tr class="separator:a11507e9bc467fb60580daa5fe5fb7339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5874db295d2bb7b23d998f9ad47def8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#ae5874db295d2bb7b23d998f9ad47def8">ActionTypes</a> { <b>Next</b>
+, <b>End</b>
 , <b>JumpTo</b>
  }</td></tr>
-<tr class="memdesc:a715b54fe803e86b07860064cb94ee9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of dialogue action available. Next: move one line down; Bye: end dialogue; JumpTo: jump to a specific line of dialogue.  <a href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a715b54fe803e86b07860064cb94ee9f2">More...</a><br /></td></tr>
-<tr class="separator:a715b54fe803e86b07860064cb94ee9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ae5874db295d2bb7b23d998f9ad47def8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of actions available for each line of dialogue: go to next line in order, end the dialogue, or jump to a specific line of dialogue.  <a href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#ae5874db295d2bb7b23d998f9ad47def8">More...</a><br /></td></tr>
+<tr class="separator:ae5874db295d2bb7b23d998f9ad47def8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Module for building dynamic dialogue trees </p>
+<div class="textblock"><p>Modular <a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html" title="Holds an array of dialogue lines. Allows finding the index of a specific line using LinearSearch() fr...">Dialogue</a> <a class="el" href="../../d8/dd0/namespace_system.html">System</a> in <a class="el" href="../../d5/df8/namespace_big_boi.html">BigBoi</a>. Allows creating fully customisable speakers and dialogues. Non-linear and multiple choice dialogue supported. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a715b54fe803e86b07860064cb94ee9f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a715b54fe803e86b07860064cb94ee9f2">&#9670;&nbsp;</a></span>DialogueActions</h2>
+<a id="ae5874db295d2bb7b23d998f9ad47def8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5874db295d2bb7b23d998f9ad47def8">&#9670;&nbsp;</a></span>ActionTypes</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,7 +133,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a715b54fe803e86b07860064cb94ee9f2">BigBoi.DialogueSystem.DialogueActions</a></td>
+          <td class="memname">enum <a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#ae5874db295d2bb7b23d998f9ad47def8">BigBoi.DialogueSystem.ActionTypes</a></td>
         </tr>
       </table>
   </td>
@@ -125,9 +143,35 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Types of dialogue action available. Next: move one line down; Bye: end dialogue; JumpTo: jump to a specific line of dialogue. </p>
+<p>Types of actions available for each line of dialogue: go to next line in order, end the dialogue, or jump to a specific line of dialogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html#l00160">160</a> of file <a class="el" href="../../d1/de7/_dialogue_manager_8cs_source.html">DialogueManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d96/_manager_8cs_source.html#l00161">161</a> of file <a class="el" href="../../d9/d96/_manager_8cs_source.html">Manager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a11507e9bc467fb60580daa5fe5fb7339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11507e9bc467fb60580daa5fe5fb7339">&#9670;&nbsp;</a></span>Expressions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dc/d40/namespace_big_boi_1_1_dialogue_system.html#a11507e9bc467fb60580daa5fe5fb7339">BigBoi.DialogueSystem.Expressions</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default expression options for character faces. To add or removes options, edit this enum and the "ExpressionSet" struct in <a class="el" href="../../d9/d2d/_person_8cs_source.html">Person.cs</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d96/_manager_8cs_source.html#l00150">150</a> of file <a class="el" href="../../d9/d96/_manager_8cs_source.html">Manager.cs</a>.</p>
 
 </div>
 </div>

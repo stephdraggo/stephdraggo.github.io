@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jumpto_20',['JumpTo',['../d2/dd9/class_big_boi_1_1_dialogue_system_1_1_dialogue_manager.html#a5d9f164ef31b4c49982b3e5a14087771',1,'BigBoi::DialogueSystem::DialogueManager']]]
+  ['gamescenemenumanager_48',['GameSceneMenuManager',['../d9/d1a/class_big_boi_1_1_menus_1_1_game_scene_menu_manager.html',1,'BigBoi::Menus']]]
 ];

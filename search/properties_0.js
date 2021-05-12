@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['axis_104',['Axis',['../d9/dae/class_big_boi_modular_1_1_mobile_1_1_joystick_input.html#adc7a2532ebd2b55ae94cbdebd9516a0c',1,'BigBoiModular::Mobile::JoystickInput']]]
+  ['target_227',['Target',['../d3/d1a/class_big_boi_1_1_a_i_1_1_free_movement.html#a76a60a0c9c4017fd8295bdfab37294f3',1,'BigBoi::AI::FreeMovement']]]
 ];

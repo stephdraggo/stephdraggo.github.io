@@ -68,7 +68,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../da/d5d/class_big_boi_1_1_dialogue_system_1_1_dialogue-members.html">List of all members</a>  </div>
@@ -77,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Scriptable object holding all the information for one full dialogue.  
+<p>Holds an array of dialogue lines. Allows finding the index of a specific line using LinearSearch() from <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html">SearchingAlgorithms.cs</a>  
  <a href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for BigBoi.DialogueSystem.Dialogue:</div>
@@ -88,74 +87,65 @@ Inheritance diagram for BigBoi.DialogueSystem.Dialogue:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information for one line of dialogue. Reference to the person speaking, text that is being said, and possible actions to take in response.  <a href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d21/class_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_people.html">People</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afcbe46d32e5db1bdc75f53ec1cc1fe6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#afcbe46d32e5db1bdc75f53ec1cc1fe6b">GetTarget</a> (int _index)</td></tr>
-<tr class="memdesc:afcbe46d32e5db1bdc75f53ec1cc1fe6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get line at this index  <a href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#afcbe46d32e5db1bdc75f53ec1cc1fe6b">More...</a><br /></td></tr>
-<tr class="separator:afcbe46d32e5db1bdc75f53ec1cc1fe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a927ca491420ea5b8cbb1829e20186ecf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#a927ca491420ea5b8cbb1829e20186ecf">GetIndex</a> (<a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a> _line)</td></tr>
-<tr class="memdesc:a927ca491420ea5b8cbb1829e20186ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get index of this line  <a href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#a927ca491420ea5b8cbb1829e20186ecf">More...</a><br /></td></tr>
-<tr class="separator:a927ca491420ea5b8cbb1829e20186ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a07895558ffad5855ad37ec208a0c1695"><td class="memItemLeft" align="right" valign="top"><a id="a07895558ffad5855ad37ec208a0c1695"></a>
-<a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>activeLine</b></td></tr>
-<tr class="separator:a07895558ffad5855ad37ec208a0c1695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a13086e603569dc84b99f2c16c0d755"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#a6a13086e603569dc84b99f2c16c0d755">LineIndex</a> (<a class="el" href="../../db/dd2/class_big_boi_1_1_dialogue_system_1_1_line.html">Line</a> _line)</td></tr>
+<tr class="memdesc:a6a13086e603569dc84b99f2c16c0d755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for finding the index of a specific line in this dialogue.  <a href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#a6a13086e603569dc84b99f2c16c0d755">More...</a><br /></td></tr>
+<tr class="separator:a6a13086e603569dc84b99f2c16c0d755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a881540e12d90cfed7d5499c41baa2cd1"><td class="memItemLeft" align="right" valign="top"><a id="a881540e12d90cfed7d5499c41baa2cd1"></a>
-<a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Lines</b><code> [get]</code></td></tr>
-<tr class="separator:a881540e12d90cfed7d5499c41baa2cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab48f773c223266737da8d41e049e62b"><td class="memItemLeft" align="right" valign="top"><a id="aab48f773c223266737da8d41e049e62b"></a>
+<a class="el" href="../../db/dd2/class_big_boi_1_1_dialogue_system_1_1_line.html">Line</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Lines</b><code> [get]</code></td></tr>
+<tr class="separator:aab48f773c223266737da8d41e049e62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a244bb72fe28cadef83dfc57c3531c812"><td class="memItemLeft" align="right" valign="top"><a id="a244bb72fe28cadef83dfc57c3531c812"></a>
-<a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>lines</b></td></tr>
-<tr class="separator:a244bb72fe28cadef83dfc57c3531c812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c018dfb56136e87eafd67d58439370"><td class="memItemLeft" align="right" valign="top"><a id="a06c018dfb56136e87eafd67d58439370"></a>
+<a class="el" href="../../d0/d21/class_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_people.html">People</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>people</b></td></tr>
+<tr class="separator:a06c018dfb56136e87eafd67d58439370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e965659a4f891df0be9344cacfc702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dd2/class_big_boi_1_1_dialogue_system_1_1_line.html">Line</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#ad7e965659a4f891df0be9344cacfc702">lines</a></td></tr>
+<tr class="memdesc:ad7e965659a4f891df0be9344cacfc702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of dialogue lines.  <a href="../../d0/dc2/class_big_boi_1_1_dialogue_system_1_1_dialogue.html#ad7e965659a4f891df0be9344cacfc702">More...</a><br /></td></tr>
+<tr class="separator:ad7e965659a4f891df0be9344cacfc702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Scriptable object holding all the information for one full dialogue. </p>
+<div class="textblock"><p>Holds an array of dialogue lines. Allows finding the index of a specific line using LinearSearch() from <a class="el" href="../../da/d87/_searching_algorithms_8cs_source.html">SearchingAlgorithms.cs</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d76/_dialogue_8cs_source.html#l00010">10</a> of file <a class="el" href="../../d1/d76/_dialogue_8cs_source.html">Dialogue.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d76/_dialogue_8cs_source.html#l00013">13</a> of file <a class="el" href="../../d1/d76/_dialogue_8cs_source.html">Dialogue.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a927ca491420ea5b8cbb1829e20186ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a927ca491420ea5b8cbb1829e20186ecf">&#9670;&nbsp;</a></span>GetIndex()</h2>
+<a id="a6a13086e603569dc84b99f2c16c0d755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a13086e603569dc84b99f2c16c0d755">&#9670;&nbsp;</a></span>LineIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int BigBoi.DialogueSystem.Dialogue.GetIndex </td>
+          <td class="memname">int BigBoi.DialogueSystem.Dialogue.LineIndex </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/dd2/class_big_boi_1_1_dialogue_system_1_1_line.html">Line</a>&#160;</td>
           <td class="paramname"><em>_line</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get index of this line </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d76/_dialogue_8cs_source.html#l00049">49</a> of file <a class="el" href="../../d1/d76/_dialogue_8cs_source.html">Dialogue.cs</a>.</p>
+<p>Method for finding the index of a specific line in this dialogue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_line</td><td>line to locate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index of passed line</dd></dl>
 
 </div>
 </div>
-<a id="afcbe46d32e5db1bdc75f53ec1cc1fe6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcbe46d32e5db1bdc75f53ec1cc1fe6b">&#9670;&nbsp;</a></span>GetTarget()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad7e965659a4f891df0be9344cacfc702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e965659a4f891df0be9344cacfc702">&#9670;&nbsp;</a></span>lines</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,23 +154,19 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d2e/struct_big_boi_1_1_dialogue_system_1_1_dialogue_1_1_dialogue_line.html">DialogueLine</a> BigBoi.DialogueSystem.Dialogue.GetTarget </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_index</em></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="../../db/dd2/class_big_boi_1_1_dialogue_system_1_1_line.html">Line</a> [] BigBoi.DialogueSystem.Dialogue.lines</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get line at this index </p>
+<p>Array of dialogue lines. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d76/_dialogue_8cs_source.html#l00041">41</a> of file <a class="el" href="../../d1/d76/_dialogue_8cs_source.html">Dialogue.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d76/_dialogue_8cs_source.html#l00029">29</a> of file <a class="el" href="../../d1/d76/_dialogue_8cs_source.html">Dialogue.cs</a>.</p>
 
 </div>
 </div>

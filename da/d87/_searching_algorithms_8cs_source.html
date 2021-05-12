@@ -69,66 +69,71 @@ $(function() {
 <div class="title">SearchingAlgorithms.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d8/dd0/namespace_system.html">System</a>.Collections.Generic;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d5/df8/namespace_big_boi.html">    5</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d5/df8/namespace_big_boi.html">BigBoi</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d5/df8/namespace_big_boi.html">BigBoi</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html">SearchingAlgorithms</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a65aea15844a1aa9757b8e9e48a8edf62">   13</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a65aea15844a1aa9757b8e9e48a8edf62">LinearSearch&lt;T&gt;</a>(T[] _array, T _target)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _array.Length; i++) <span class="comment">//go through array</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordflow">if</span> (_array[i].Equals(_target)) <span class="comment">//check each item if the target item</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                    <span class="keywordflow">return</span> i; <span class="comment">//end method and return index</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="comment">//if target object does not exist in this array</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            Debug.LogError(<span class="stringliteral">&quot;Target not found in the passed array. Returning 0.&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a86fe48f5ce779b06ab89bfce70931f34">   36</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a86fe48f5ce779b06ab89bfce70931f34">BinarySearch&lt;T&gt;</a>(List&lt;T&gt; _list, T _target, IComparer&lt;T&gt; _comparer)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="comment">//declare variables</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">int</span> lowIndex = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">int</span> highIndex = _list.Count;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">int</span> midPoint;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">while</span> (lowIndex &lt;= highIndex) <span class="comment">//while within bounds of high and low indices</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                midPoint = (lowIndex + highIndex) / 2; <span class="comment">//set/reset midpoint</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordtype">int</span> comparison = _comparer.Compare(_list[midPoint], _target); <span class="comment">//here is the comparer, James</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span> (comparison &gt; 0) <span class="comment">//if comparison is positive</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    highIndex = midPoint - 1; <span class="comment">//decrease high index</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comparison &lt; 0) <span class="comment">//if comparison is negative</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    lowIndex = midPoint + 1; <span class="comment">//increase low index</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">else</span> <span class="comment">//if comparison is 0</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <span class="keywordflow">return</span> midPoint; <span class="comment">//target found</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="comment">//if target object does not exist in this array</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            Debug.LogError(<span class="stringliteral">&quot;Target not found in the passed array. Returning 0.&quot;</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">        #region Linear Search</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ab98c47a2cc439fa2ab32aa9cd6a8cb12">   14</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ab98c47a2cc439fa2ab32aa9cd6a8cb12">LinearSearch&lt;T&gt;</a>(<span class="keyword">this</span> T _target, List&lt;T&gt; _list) where T : IComparable</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _list.Count; i++) <span class="comment">//go through list</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">if</span> ((_list[i].CompareTo(_target)) == 0) <span class="comment">//check each item if the target item</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    <span class="keywordflow">return</span> i; <span class="comment">//end method and return index</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="comment">//if target object does not exist in this array</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            Debug.LogError(<span class="stringliteral">&quot;Target not found in the passed list. Returning -1.&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">        #region Binary Search</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ae209bb65bff23a7e0cc77efc37599ee2">   35</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ae209bb65bff23a7e0cc77efc37599ee2">BinarySearch&lt;T&gt;</a>(<span class="keyword">this</span> T _target, List&lt;T&gt; _list) where T : IComparable</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="comment">//declare variables</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">int</span> lowIndex = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">int</span> highIndex = _list.Count;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">int</span> midPoint;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">while</span> (lowIndex &lt;= highIndex) <span class="comment">//while within bounds of high and low indices</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                midPoint = (lowIndex + highIndex) / 2; <span class="comment">//set/reset midpoint</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordtype">int</span> comparison = _list[midPoint].CompareTo(_target); <span class="comment">//comparing time</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">if</span> (comparison &gt; 0) <span class="comment">//if comparison is positive</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    highIndex = midPoint - 1; <span class="comment">//decrease high index</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comparison &lt; 0) <span class="comment">//if comparison is negative</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    lowIndex = midPoint + 1; <span class="comment">//increase low index</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">else</span> <span class="comment">//if comparison is 0</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordflow">return</span> midPoint; <span class="comment">//target found</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="comment">//if target object does not exist in this array</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Debug.LogError(<span class="stringliteral">&quot;Target not found in the passed list. Returning -1.&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="ttc" id="aclass_big_boi_1_1_searching_algorithms_html"><div class="ttname"><a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html">BigBoi.SearchingAlgorithms</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d87/_searching_algorithms_8cs_source.html#l00007">SearchingAlgorithms.cs:8</a></div></div>
-<div class="ttc" id="aclass_big_boi_1_1_searching_algorithms_html_a65aea15844a1aa9757b8e9e48a8edf62"><div class="ttname"><a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a65aea15844a1aa9757b8e9e48a8edf62">BigBoi.SearchingAlgorithms.LinearSearch&lt; T &gt;</a></div><div class="ttdeci">static int LinearSearch&lt; T &gt;(T[] _array, T _target)</div><div class="ttdoc">Find the index of an object in a given array</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d87/_searching_algorithms_8cs_source.html#l00013">SearchingAlgorithms.cs:13</a></div></div>
-<div class="ttc" id="aclass_big_boi_1_1_searching_algorithms_html_a86fe48f5ce779b06ab89bfce70931f34"><div class="ttname"><a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#a86fe48f5ce779b06ab89bfce70931f34">BigBoi.SearchingAlgorithms.BinarySearch&lt; T &gt;</a></div><div class="ttdeci">static int BinarySearch&lt; T &gt;(List&lt; T &gt; _list, T _target, IComparer&lt; T &gt; _comparer)</div><div class="ttdoc">Searches through list of objects for a specific object and returns index</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d87/_searching_algorithms_8cs_source.html#l00036">SearchingAlgorithms.cs:36</a></div></div>
-<div class="ttc" id="anamespace_big_boi_html"><div class="ttname"><a href="../../d5/df8/namespace_big_boi.html">BigBoi</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d87/_searching_algorithms_8cs_source.html#l00005">SearchingAlgorithms.cs:6</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_searching_algorithms_html_ab98c47a2cc439fa2ab32aa9cd6a8cb12"><div class="ttname"><a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ab98c47a2cc439fa2ab32aa9cd6a8cb12">BigBoi.SearchingAlgorithms.LinearSearch&lt; T &gt;</a></div><div class="ttdeci">static int LinearSearch&lt; T &gt;(this T _target, List&lt; T &gt; _list)</div><div class="ttdoc">Find the index of an object in a given list</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d87/_searching_algorithms_8cs_source.html#l00014">SearchingAlgorithms.cs:14</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_searching_algorithms_html_ae209bb65bff23a7e0cc77efc37599ee2"><div class="ttname"><a href="../../da/d2f/class_big_boi_1_1_searching_algorithms.html#ae209bb65bff23a7e0cc77efc37599ee2">BigBoi.SearchingAlgorithms.BinarySearch&lt; T &gt;</a></div><div class="ttdeci">static int BinarySearch&lt; T &gt;(this T _target, List&lt; T &gt; _list)</div><div class="ttdoc">Searches through list of objects for a specific object and returns index T must extend IComparable.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d87/_searching_algorithms_8cs_source.html#l00035">SearchingAlgorithms.cs:35</a></div></div>
+<div class="ttc" id="anamespace_big_boi_html"><div class="ttname"><a href="../../d5/df8/namespace_big_boi.html">BigBoi</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/de2/_basic_movement_editor_8cs_source.html#l00005">BasicMovementEditor.cs:6</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="../../d8/dd0/namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/_i_value_8cs_source.html#l00001">IValue.cs:2</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -75,19 +75,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7081160763bad56982a18877dafb582"><td class="memItemLeft" align="right" valign="top"><a id="ac7081160763bad56982a18877dafb582"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>CountingSort&lt; T &gt;</b> (this List&lt; T &gt; _list)</td></tr>
-<tr class="separator:ac7081160763bad56982a18877dafb582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f08e593deff89fcb9bb0e4d8b9ec543"><td class="memItemLeft" align="right" valign="top">static List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#a0f08e593deff89fcb9bb0e4d8b9ec543">CountingSortOld</a> (List&lt; int &gt; _list)</td></tr>
-<tr class="memdesc:a0f08e593deff89fcb9bb0e4d8b9ec543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an array of integers and uses counting sort to sort them in order of smallest to biggest. This algorithm is best used for integers close in value to one another  <a href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#a0f08e593deff89fcb9bb0e4d8b9ec543">More...</a><br /></td></tr>
-<tr class="separator:a0f08e593deff89fcb9bb0e4d8b9ec543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cfb727556c1f6baae9efbc0c388764"><td class="memItemLeft" align="right" valign="top">static List&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#af5cfb727556c1f6baae9efbc0c388764">CountingSort&lt; T &gt;</a> (this List&lt; T &gt; _list)</td></tr>
+<tr class="memdesc:af5cfb727556c1f6baae9efbc0c388764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses maths to efficiently sort objects with integer values. Works best for groups of values close in range. Requires IValue instead of IComparable since Counting sort does not do any comparisons for the sorting and instead relies on just counting numbers. IValue contains the method GetValue() which returns an int.  <a href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#af5cfb727556c1f6baae9efbc0c388764">More...</a><br /></td></tr>
+<tr class="separator:af5cfb727556c1f6baae9efbc0c388764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34d9e092803bc6f728913821887821c"><td class="memItemLeft" align="right" valign="top">static List&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#ae34d9e092803bc6f728913821887821c">ShellSort&lt; T &gt;</a> (this List&lt; T &gt; _list)</td></tr>
+<tr class="memdesc:ae34d9e092803bc6f728913821887821c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare and sort in increments that increase in range using bit-shifting. Type must extend IComparable for the CompareTo method.  <a href="../../d0/d32/class_big_boi_1_1_sorting_algorithms.html#ae34d9e092803bc6f728913821887821c">More...</a><br /></td></tr>
+<tr class="separator:ae34d9e092803bc6f728913821887821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00006">6</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0f08e593deff89fcb9bb0e4d8b9ec543"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f08e593deff89fcb9bb0e4d8b9ec543">&#9670;&nbsp;</a></span>CountingSortOld()</h2>
+<a id="af5cfb727556c1f6baae9efbc0c388764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cfb727556c1f6baae9efbc0c388764">&#9670;&nbsp;</a></span>CountingSort&lt; T &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -96,9 +96,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>CountingSort&l
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static List&lt;int&gt; BigBoi.SortingAlgorithms.CountingSortOld </td>
+          <td class="memname">static List&lt;T&gt; BigBoi.SortingAlgorithms.CountingSort&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramtype">List&lt; int &gt;&#160;</td>
+          <td class="paramtype">this List&lt; T &gt;&#160;</td>
           <td class="paramname"><em>_list</em></td><td>)</td>
           <td></td>
         </tr>
@@ -110,16 +110,55 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>CountingSort&l
 </table>
 </div><div class="memdoc">
 
-<p>Takes in an array of integers and uses counting sort to sort them in order of smallest to biggest. This algorithm is best used for integers close in value to one another </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_list</td><td>array of integers</td></tr>
-  </table>
-  </dd>
+<p>Uses maths to efficiently sort objects with integer values. Works best for groups of values close in range. Requires IValue instead of IComparable since Counting sort does not do any comparisons for the sorting and instead relies on just counting numbers. IValue contains the method GetValue() which returns an int. </p>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IValue</em></td><td>&#160;</td></tr>
+</table>
+</dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>sorted array</dd></dl>
+</div>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00076">76</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00015">15</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae34d9e092803bc6f728913821887821c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34d9e092803bc6f728913821887821c">&#9670;&nbsp;</a></span>ShellSort&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt;T&gt; BigBoi.SortingAlgorithms.ShellSort&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compare and sort in increments that increase in range using bit-shifting. Type must extend IComparable for the CompareTo method. </p>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IComparable</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html#l00082">82</a> of file <a class="el" href="../../d5/db8/_sorting_algorithms_8cs_source.html">SortingAlgorithms.cs</a>.</p>
 
 </div>
 </div>

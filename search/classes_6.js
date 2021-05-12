@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qualitydropdown_48',['QualityDropdown',['../da/df1/class_big_boi_1_1_options_system_1_1_quality_dropdown.html',1,'BigBoi::OptionsSystem']]]
+  ['gamescenemenumanager_131',['GameSceneMenuManager',['../d9/d1a/class_big_boi_1_1_menus_1_1_game_scene_menu_manager.html',1,'BigBoi::Menus']]]
 ];

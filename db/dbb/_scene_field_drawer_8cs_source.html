@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BigBoiModular: C:/Users/Stephane/Documents/GitHub/BigBoiModular/Assets/BigBoiModular/Editor/Core/SceneFieldDrawer.cs Source File</title>
+<title>BigBoi: C:/Users/Stephane/Documents/GitHub/BigBoi/Assets/BigBoi/Core/Editor/SceneFieldDrawer.cs Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">BigBoiModular
+   <div id="projectname">BigBoi
    </div>
   </td>
  </tr>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_fa88f64eed69d228c1de1129849a271e.html">BigBoiModular</a></li><li class="navelem"><a class="el" href="../../dir_84510674369448be6dc744e76b17bb29.html">Editor</a></li><li class="navelem"><a class="el" href="../../dir_5fb1c74b492b22d2b6454a8b898b6b26.html">Core</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="../../dir_a28b1f62fcc5856f6278aace34b2104f.html">BigBoi</a></li><li class="navelem"><a class="el" href="../../dir_98704eb7746327eba5b666743e0bf487.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_3088e7ffb5914f606e889802b9a63f81.html">Editor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,10 +72,10 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEditor;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/de7/namespace_big_boi_modular_1_1_edit_inspect.html">BigBoiModular.EditInspect</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d5/df8/namespace_big_boi.html">BigBoi</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    [CustomPropertyDrawer(typeof(SceneFieldAttribute))]</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d3/d16/class_big_boi_modular_1_1_edit_inspect_1_1_scene_field_drawer.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../d3/d16/class_big_boi_modular_1_1_edit_inspect_1_1_scene_field_drawer.html">SceneFieldDrawer</a> : PropertyDrawer</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d6/da2/class_big_boi_1_1_scene_field_drawer.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../d6/da2/class_big_boi_1_1_scene_field_drawer.html">SceneFieldDrawer</a> : PropertyDrawer</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> OnGUI(Rect _position, SerializedProperty _property, GUIContent _label)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        {</div>
@@ -96,7 +96,7 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="comment">//sure did, I guess</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="comment">//set string to path of scene</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordtype">string</span> path = AssetDatabase.GetAssetPath(newScene);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                _property.stringValue = path;                       </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                _property.stringValue = path;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -106,8 +106,8 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">float</span> GetPropertyHeight(SerializedProperty _property, GUIContent _label) =&gt; EditorGUIUtility.singleLineHeight;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="ttc" id="aclass_big_boi_modular_1_1_edit_inspect_1_1_scene_field_drawer_html"><div class="ttname"><a href="../../d3/d16/class_big_boi_modular_1_1_edit_inspect_1_1_scene_field_drawer.html">BigBoiModular.EditInspect.SceneFieldDrawer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dbb/_scene_field_drawer_8cs_source.html#l00007">SceneFieldDrawer.cs:8</a></div></div>
-<div class="ttc" id="anamespace_big_boi_modular_1_1_edit_inspect_html"><div class="ttname"><a href="../../dc/de7/namespace_big_boi_modular_1_1_edit_inspect.html">BigBoiModular.EditInspect</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/db1/_spawner_editor_8cs_source.html#l00007">SpawnerEditor.cs:8</a></div></div>
+<div class="ttc" id="aclass_big_boi_1_1_scene_field_drawer_html"><div class="ttname"><a href="../../d6/da2/class_big_boi_1_1_scene_field_drawer.html">BigBoi.SceneFieldDrawer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dbb/_scene_field_drawer_8cs_source.html#l00007">SceneFieldDrawer.cs:8</a></div></div>
+<div class="ttc" id="anamespace_big_boi_html"><div class="ttname"><a href="../../d5/df8/namespace_big_boi.html">BigBoi</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/de2/_basic_movement_editor_8cs_source.html#l00005">BasicMovementEditor.cs:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

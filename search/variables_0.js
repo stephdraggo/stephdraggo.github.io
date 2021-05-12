@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fingerid_101',['fingerId',['../d1/da9/class_big_boi_modular_1_1_mobile_1_1_swipe_input_1_1_swipe.html#a5254843458064f30d13603ee898b536b',1,'BigBoiModular::Mobile::SwipeInput::Swipe']]]
+  ['activedialogue_207',['activeDialogue',['../db/d26/class_big_boi_1_1_dialogue_system_1_1_manager.html#a0c6b678aa69ce5acfbaadaf2b23d3c3a',1,'BigBoi::DialogueSystem::Manager']]]
 ];
